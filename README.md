@@ -3,7 +3,7 @@
 **Um divertido jogo de adivinhação onde você tenta descobrir um número secreto.**
 
 ## Como jogar
-1. **Acesse o jogo:** Abra o arquivo `index.html` em seu navegador.
+1. **Acesse o jogo:** Abra o arquivo `index.html` em seu navegador ou acesse https://jogo-do-numero-secreto-phi-sable.vercel.app/.
 2. **Chute um número:** Digite seu palpite no campo indicado e clique em "Chutar".
 3. **Receba dicas:** O jogo te dirá se seu chute foi alto ou baixo.
 4. **Continue tentando:** Repita o processo até acertar o número secreto.
