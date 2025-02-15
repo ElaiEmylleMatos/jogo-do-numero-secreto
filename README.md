@@ -1,6 +1,6 @@
 # Jogo do Número Secreto 
 
-**Um divertido jogo de adivinhação onde você tenta descobrir um número secreto.**
+**Um divertido jogo de adivinhação onde você tenta descobrir um número secreto. Desenvolvido durante o curso de Lógica de Programação da Alura.**
 
 ## Como jogar
 1. **Acesse o jogo:** Abra o arquivo `index.html` em seu navegador ou acesse https://jogo-do-numero-secreto-phi-sable.vercel.app/.
@@ -14,7 +14,7 @@
 * **HTML:** Estrutura da página.
 * **CSS:** Estilização da página.
 * **JavaScript:** Lógica do jogo e interação com o usuário.
-* **ResponsiveVoice.js:** Leitura em voz alta das dicas e mensagens.
+* **Web Speech API:** Leitura em voz alta das dicas e mensagens usando a API nativa do navegador.
 
 ## Instalação e uso
 1. **Clone este repositório:** Se você quiser contribuir ou modificar o jogo, clone-o usando o Git.
@@ -24,6 +24,6 @@
 Contribuições são bem-vindas! Abra um pull request para propor alterações ou melhorias.
 
 ## Autor
-Elai Emylle Matos de Lima - Desenvolvido durante o curso de Lógica de Programação da Alura.
+Elai Emylle Matos de Lima
 
 **Estou à disposição!**

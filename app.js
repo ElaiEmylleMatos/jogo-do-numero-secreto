@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 let listaDeNumerosSorteados = [];
 let maxTentativas = 50;
 let numeroSecreto = gerarNumeroAleatorio();
@@ -7,7 +6,14 @@ let tentativas = 1;
 function exibirTextoNaTela(tag, texto) {
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
-    responsiveVoice.speak(texto, 'Brazilian Portuguese Female', { rate: 1.2 });
+    if ('speechSynthesis' in window) {
+        let utterance = new SpeechSynthesisUtterance(texto);
+        utterance.lang = 'pt-BR';
+        utterance.rate = 1.2;
+        window.speechSynthesis.speak(utterance);
+    } else {
+        console.log("Web Speech API não suportada neste navegador.");
+    }
 }
 
 function exibirMensagemInicial() {
@@ -65,21 +71,11 @@ function reiniciarJogo() {
     limparCampo('input');
     exibirMensagemInicial();
     document.getElementById('reiniciar').setAttribute('disabled', true);
-=======
-let listaDeNumerosSorteados = [];
-let maxTentativas = 10;
-let numeroSecreto = gerarNumeroAleatorio();
-let tentativas = 1;
 
-function exibirTextoNaTela(tag, texto) {
-    let campo = document.querySelector(tag);
-    campo.innerHTML = texto;
-    responsiveVoice.speak(texto, 'Brazilian Portuguese Female', { rate: 1.2 });
-}
-
-function exibirMensagemInicial() {
-    exibirTextoNaTela('h1', 'Jogo do Número Secreto');
-    exibirTextoNaTela('p', 'Escolha um número entre 1 e 10');
+    let listaDeNumerosSorteados = [];
+    let maxTentativas = 10;
+    let numeroSecreto = gerarNumeroAleatorio();
+    let tentativas = 1;
 }
 
 exibirMensagemInicial();
@@ -132,5 +128,5 @@ function reiniciarJogo() {
     limparCampo('input');
     exibirMensagemInicial();
     document.getElementById('reiniciar').setAttribute('disabled', true);
->>>>>>> 3fa69701847fd98935fa6057b8b3ce0fa4c54c1b
+
 }
